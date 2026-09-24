@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this code or the released results, please cite the accompanying paper."
+title: "Complementary Behavior Representations for APT Evidence Recovery - code and archived results"
+abstract: >-
+  Compact code-and-results release for the paper "Complementary Behavior
+  Representations for APT Evidence Recovery". It contains the nine-host
+  Aggregate/Joint comparison over 27 paired detector runs, the archived
+  Temporal-only summaries, the archived rule-sensitivity, paired-comparison and
+  calibrated-rule tables, the detector, correlation, reporting and TGN-encoder
+  code paths, and a stdlib-only script that re-derives every quoted number from
+  the shipped CSVs.
+type: software
+authors:
+  - name: "Anonymous Authors (double-blind review copy)"
+repository-code: "https://github.com/holdenli275/apt-evidence-recovery"
+url: "https://github.com/holdenli275/apt-evidence-recovery"
+license: Apache-2.0
+version: 1.0.0
+date-released: 2026-09-24
+keywords:
+  - provenance graph
+  - APT evidence recovery
+  - temporal graph network
+  - representation learning
+  - intrusion detection
+  - reported-set evaluation

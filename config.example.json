@@ -1,0 +1,5 @@
+{
+  "repository_url_tc3": "http://localhost:7200/repositories/tc3",
+  "repository_url_optc": "http://localhost:7200/repositories/optc",
+  "repository_url_nodlink": "http://localhost:7200/repositories/nodlink"
+}

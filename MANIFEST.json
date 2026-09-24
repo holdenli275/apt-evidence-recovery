@@ -1,0 +1,895 @@
+{
+  "paper": "Complementary Behavior Representations for APT Evidence Recovery",
+  "file_count": 148,
+  "note": "Regenerated for release v1.0.0: the release README was rewritten, the verification script was renamed (its original name carried the submission file name), and two scripts no longer name the manuscript file, so those hashes differ from the original package manifest.",
+  "files": [
+    {
+      "path": ".gitignore",
+      "group": "release_metadata",
+      "bytes": 706,
+      "sha256": "7cc54833fe1704a5f9a4f9c4903185f2c3b9fc1259114c1c1c2baae4d888d6fe"
+    },
+    {
+      "path": ".zenodo.json",
+      "group": "release_metadata",
+      "bytes": 2198,
+      "sha256": "7a2b91373ef42a823771c143f65113aa7e32abeee15c03cd5dd2727876450675"
+    },
+    {
+      "path": "CITATION.cff",
+      "group": "release_metadata",
+      "bytes": 1141,
+      "sha256": "d2ce4b6927201b3f9a54b01d20129e815ce19164bc61fdf81090247596651be9"
+    },
+    {
+      "path": "LICENSE",
+      "group": "source",
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "path": "MANIFEST.md",
+      "group": "documentation",
+      "bytes": 7132,
+      "sha256": "fe3306aa387f31167cc8d7c6cec8c15fcd42c289c7d25df965a728ab0e9a51d0"
+    },
+    {
+      "path": "README.md",
+      "group": "documentation",
+      "bytes": 7968,
+      "sha256": "6990c6a46d69f764c72a55d604167ea0d391ace767d764bbf8cd06144cb7024b"
+    },
+    {
+      "path": "VERSION.md",
+      "group": "documentation",
+      "bytes": 1441,
+      "sha256": "3a6eb4364aa871e5046a85b591f31f300b62de98a89244ef92855a9a44e1a86e"
+    },
+    {
+      "path": "analysis/knob_sensitivity.csv",
+      "group": "derived_table",
+      "bytes": 6051,
+      "sha256": "4c87c547ca69cb4cc00f2032d4eaff3f890941f1fa0e608f1176910d4b2e6812"
+    },
+    {
+      "path": "analysis/knob_sensitivity.py",
+      "group": "source",
+      "bytes": 2893,
+      "sha256": "f9db2847bdbcf866f8963c2416a24fb381c150dbf8ef3d0ec03f1f333c65bf74"
+    },
+    {
+      "path": "analysis/mechanism/operating_point.py",
+      "group": "source",
+      "bytes": 4237,
+      "sha256": "9e8dab38d100596fb62c86879924213d1fc6d5547289a6225d2021c8347fcc6f"
+    },
+    {
+      "path": "analysis/mechanism/operating_point_calibrated.csv",
+      "group": "derived_table",
+      "bytes": 906,
+      "sha256": "13a0e1d43044cdc4cae6be8728c5d1de705f1459653a675d3597d4001afaf13c"
+    },
+    {
+      "path": "analysis/mechanism/operating_point_fixed.csv",
+      "group": "derived_table",
+      "bytes": 939,
+      "sha256": "c3d521008eed73355b5971c487b93d78fa5f6c5602a5feb8ce586d094ce48461"
+    },
+    {
+      "path": "analysis/paired_significance.csv",
+      "group": "derived_table",
+      "bytes": 3063,
+      "sha256": "7670b1a647ce43d54b11707e2be5f1d64441e3a46e7bd201ab9349f722a74df5"
+    },
+    {
+      "path": "analysis/paired_significance.py",
+      "group": "source",
+      "bytes": 10133,
+      "sha256": "1d7f4c503274b67ae6a633b7a6c761cfa7e5117d13c92cc91b3994b64cd4b7e0"
+    },
+    {
+      "path": "analysis/safe_tiebreak_probe.csv",
+      "group": "derived_table",
+      "bytes": 6021,
+      "sha256": "5d61b5896b34e3d9a082416fc5e7806c5b35ff677cfc4f786a8bdcb127243ffb"
+    },
+    {
+      "path": "analysis/subgraph_rescoring.csv",
+      "group": "derived_table",
+      "bytes": 63038,
+      "sha256": "928967ecbeb11f5a8b4ad7e25420161cc1547852ac7f469f6add9c7834cf144f"
+    },
+    {
+      "path": "bash_src/build_tgnonly_features.py",
+      "group": "source",
+      "bytes": 2632,
+      "sha256": "1a8cccb7132a5b6c607d210bea130fe0aca09c3becb6eb8b2ffdf9bd206b5062"
+    },
+    {
+      "path": "bash_src/prep_cache_runs.py",
+      "group": "source",
+      "bytes": 2507,
+      "sha256": "f88a5051f567a3baa30684b830205ee753ee62a8eaf1c88962bed8c46ceb3046"
+    },
+    {
+      "path": "bash_src/safe_tiebreak_probe.py",
+      "group": "source",
+      "bytes": 3377,
+      "sha256": "f705ea6cda97121286bfb735bee6a88587057f926df91cd2130bd548b56962fe"
+    },
+    {
+      "path": "bash_src/subgraph_rescoring.py",
+      "group": "source",
+      "bytes": 20225,
+      "sha256": "3952db940ae2e5aa4c6bee4b7ca656142b0224bb3e08602c74e221f3a34b4d96"
+    },
+    {
+      "path": "config.example.json",
+      "group": "documentation",
+      "bytes": 211,
+      "sha256": "612ec3a966efda462e755ac8c768753d8204c7a796ba47d00353849356e1ae7c"
+    },
+    {
+      "path": "dataset/darpa_optc/SysClient0051/experiments/results/Full_Script_Test_TGN_fullz/T3_OCRGCN_SysClient0051_TGN_fullz/anomaly_results_summary.csv",
+      "group": "run_result",
+      "bytes": 2405,
+      "sha256": "a6e5f501a281158db368afeced924b5efc83b1ea380ff30a6921ddebe2c91d08"
+    },
+    {
+      "path": "dataset/darpa_optc/SysClient0051/experiments/results/Full_Script_Test_TGN_fullz/T3_OCRGCN_SysClient0051_TGN_fullz/run0_expand_1_hop_MaxEdges5000_K15_ly3_correlated_subgraphs_statistics.csv",
+      "group": "candidate_statistics",
+      "bytes": 2245,
+      "sha256": "cc747a33933185881c37d80fb4a9efe450436f56e5106c381e4958dfc53fff4b"
+    },
+    {
+      "path": "dataset/darpa_optc/SysClient0051/experiments/results/Full_Script_Test_TGN_fullz/T3_OCRGCN_SysClient0051_TGN_fullz/run1_expand_1_hop_MaxEdges5000_K15_ly3_correlated_subgraphs_statistics.csv",
+      "group": "candidate_statistics",
+      "bytes": 3046,
+      "sha256": "977532977904525af79514854a00e126cdfc819dc77cc75eb4a05610440d4f81"
+    },
+    {
+      "path": "dataset/darpa_optc/SysClient0051/experiments/results/Full_Script_Test_TGN_fullz/T3_OCRGCN_SysClient0051_TGN_fullz/run2_expand_1_hop_MaxEdges5000_K15_ly3_correlated_subgraphs_statistics.csv",
+      "group": "candidate_statistics",
+      "bytes": 2818,
+      "sha256": "58eb7e00b2c70b10b0bd84d3219fb88805948900713d7c77fa6544705a99d0a5"
+    },
+    {
+      "path": "dataset/darpa_optc/SysClient0051/experiments/results/Full_Script_Test_TGN_fullz/T3_OCRGCN_SysClient0051_TGN_fullz/subgraph_anomaly_results_summary.csv",
+      "group": "run_result",
+      "bytes": 1195,
+      "sha256": "a5a8dff0112138eb090bfe73e9ce2e34102568ace2da346cd4758fb7e14f1c6e"
+    },
+    {
+      "path": "dataset/darpa_optc/SysClient0051/experiments/results/Full_Script_Test_TGNonly/T3_OCRGCN_SysClient0051_TGNonly/subgraph_anomaly_results_summary.csv",
+      "group": "temporal_only_summary",
+      "bytes": 1129,
+      "sha256": "47bf8e8056a37414539b2886f41efb0ea29683bd5c72615bbe77e5c1c61c6bc2"
+    },
+    {
+      "path": "dataset/darpa_optc/SysClient0051/experiments/results/Full_Script_Test_fullz/T3_OCRGCN_SysClient0051_fullz/anomaly_results_summary.csv",
+      "group": "run_result",
+      "bytes": 2492,
+      "sha256": "59fb36394c37fafaeccd99f098aea50a6f968c0f5c969ea2e6fdf0d97e5458f6"
+    },
+    {
+      "path": "dataset/darpa_optc/SysClient0051/experiments/results/Full_Script_Test_fullz/T3_OCRGCN_SysClient0051_fullz/run0_expand_1_hop_MaxEdges5000_K15_ly3_correlated_subgraphs_statistics.csv",
+      "group": "candidate_statistics",
+      "bytes": 4920,
+      "sha256": "766c9d01d5078ae49b2a1ce3bc84043b395023d923e3910752330f3910942866"
+    },
+    {
+      "path": "dataset/darpa_optc/SysClient0051/experiments/results/Full_Script_Test_fullz/T3_OCRGCN_SysClient0051_fullz/run1_expand_1_hop_MaxEdges5000_K15_ly3_correlated_subgraphs_statistics.csv",
+      "group": "candidate_statistics",
+      "bytes": 3693,
+      "sha256": "52979e0f56913f39df5909951964bca4cdf3f57e44b0130805de25585ed98bc9"
+    },
+    {
+      "path": "dataset/darpa_optc/SysClient0051/experiments/results/Full_Script_Test_fullz/T3_OCRGCN_SysClient0051_fullz/run2_expand_1_hop_MaxEdges5000_K15_ly3_correlated_subgraphs_statistics.csv",
+      "group": "candidate_statistics",
+      "bytes": 4409,
+      "sha256": "d853beffdf47e9bf709c68b7a6cab061c61b3be6d684950a3c033aa1293eab2d"
+    },
+    {
+      "path": "dataset/darpa_optc/SysClient0051/experiments/results/Full_Script_Test_fullz/T3_OCRGCN_SysClient0051_fullz/subgraph_anomaly_results_summary.csv",
+      "group": "run_result",
+      "bytes": 1184,
+      "sha256": "6ceb757afa868a24fb25b87e68ccfb2f3f58e463037db74e14c02790d7481e95"
+    },
+    {
+      "path": "dataset/darpa_optc/SysClient0201/experiments/results/Full_Script_Test_TGN_fullz/T3_OCRGCN_SysClient0201_TGN_fullz/anomaly_results_summary.csv",
+      "group": "run_result",
+      "bytes": 2369,
+      "sha256": "cb95919ea1430f4f7c1575c4a365eea802f07c72ceeb03f3c11eb88a34d003b3"
+    },
+    {
+      "path": "dataset/darpa_optc/SysClient0201/experiments/results/Full_Script_Test_TGN_fullz/T3_OCRGCN_SysClient0201_TGN_fullz/run0_expand_1_hop_MaxEdges5000_K15_ly3_correlated_subgraphs_statistics.csv",
+      "group": "candidate_statistics",
+      "bytes": 1701,
+      "sha256": "a8971e6a6c37bdc327ba28bc004010d94372e61f2f94fc8d619f6f18213fa50b"
+    },
+    {
+      "path": "dataset/darpa_optc/SysClient0201/experiments/results/Full_Script_Test_TGN_fullz/T3_OCRGCN_SysClient0201_TGN_fullz/run1_expand_1_hop_MaxEdges5000_K15_ly3_correlated_subgraphs_statistics.csv",
+      "group": "candidate_statistics",
+      "bytes": 4037,
+      "sha256": "7b69d54f3a31ea4c9a37e5fe858766e2d91adcf267729ceb50c97ae0f4497e2b"
+    },
+    {
+      "path": "dataset/darpa_optc/SysClient0201/experiments/results/Full_Script_Test_TGN_fullz/T3_OCRGCN_SysClient0201_TGN_fullz/run2_expand_1_hop_MaxEdges5000_K15_ly3_correlated_subgraphs_statistics.csv",
+      "group": "candidate_statistics",
+      "bytes": 4012,
+      "sha256": "d22dde654c10227906b3c53b18fbf91295a6312dbba731e6b2de001ae2485178"
+    },
+    {
+      "path": "dataset/darpa_optc/SysClient0201/experiments/results/Full_Script_Test_TGN_fullz/T3_OCRGCN_SysClient0201_TGN_fullz/subgraph_anomaly_results_summary.csv",
+      "group": "run_result",
+      "bytes": 1075,
+      "sha256": "7e41b30902de1407e3fd995ec07a16b8cac3f9210cbbe61a6f69b8823cb6d81f"
+    },
+    {
+      "path": "dataset/darpa_optc/SysClient0201/experiments/results/Full_Script_Test_TGNonly/T3_OCRGCN_SysClient0201_TGNonly/subgraph_anomaly_results_summary.csv",
+      "group": "temporal_only_summary",
+      "bytes": 984,
+      "sha256": "ba337208c3555d508253934870a20dec93010773ad8fec1014f4fe3ee4dc34e7"
+    },
+    {
+      "path": "dataset/darpa_optc/SysClient0201/experiments/results/Full_Script_Test_fullz/T3_OCRGCN_SysClient0201_fullz/anomaly_results_summary.csv",
+      "group": "run_result",
+      "bytes": 2374,
+      "sha256": "dcafd433fdc7fc8d35539d9248bf83af76e81968be7db394cbc4023c16018156"
+    },
+    {
+      "path": "dataset/darpa_optc/SysClient0201/experiments/results/Full_Script_Test_fullz/T3_OCRGCN_SysClient0201_fullz/run0_expand_1_hop_MaxEdges5000_K15_ly3_correlated_subgraphs_statistics.csv",
+      "group": "candidate_statistics",
+      "bytes": 2181,
+      "sha256": "ab270df2eb77b6f3d60daa4ab54692bbba77c42cf42a1645ea15d89b61874bb1"
+    },
+    {
+      "path": "dataset/darpa_optc/SysClient0201/experiments/results/Full_Script_Test_fullz/T3_OCRGCN_SysClient0201_fullz/run1_expand_1_hop_MaxEdges5000_K15_ly3_correlated_subgraphs_statistics.csv",
+      "group": "candidate_statistics",
+      "bytes": 1765,
+      "sha256": "a100d06c852d2fe3c8ed9edd2ac57ca556205c6edc12e2b26566a832bb074a49"
+    },
+    {
+      "path": "dataset/darpa_optc/SysClient0201/experiments/results/Full_Script_Test_fullz/T3_OCRGCN_SysClient0201_fullz/run2_expand_1_hop_MaxEdges5000_K15_ly3_correlated_subgraphs_statistics.csv",
+      "group": "candidate_statistics",
+      "bytes": 3420,
+      "sha256": "98e0c65b5829306e40eae962e596e7b2c0f138a7bb643dd8901d63f5a98a0c72"
+    },
+    {
+      "path": "dataset/darpa_optc/SysClient0201/experiments/results/Full_Script_Test_fullz/T3_OCRGCN_SysClient0201_fullz/subgraph_anomaly_results_summary.csv",
+      "group": "run_result",
+      "bytes": 1041,
+      "sha256": "1a34d11ded6290b39b0d7cb4e58054f5030633bf937305d9dac1e7e681d1e93c"
+    },
+    {
+      "path": "dataset/darpa_optc/SysClient0501/experiments/results/Full_Script_Test_TGN_fullz/T3_OCRGCN_SysClient0501_TGN_fullz/anomaly_results_summary.csv",
+      "group": "run_result",
+      "bytes": 2076,
+      "sha256": "2a71ec9c1447c78b18b97127f591a108f9f686eddc041ef3480770e3083c07f8"
+    },
+    {
+      "path": "dataset/darpa_optc/SysClient0501/experiments/results/Full_Script_Test_TGN_fullz/T3_OCRGCN_SysClient0501_TGN_fullz/run0_expand_1_hop_MaxEdges5000_K15_ly3_correlated_subgraphs_statistics.csv",
+      "group": "candidate_statistics",
+      "bytes": 2295,
+      "sha256": "9e370c117d1dac618f391ab2b936f5d0dfcc0f35874732fbdf9ee3ef07eef415"
+    },
+    {
+      "path": "dataset/darpa_optc/SysClient0501/experiments/results/Full_Script_Test_TGN_fullz/T3_OCRGCN_SysClient0501_TGN_fullz/run1_expand_1_hop_MaxEdges5000_K15_ly3_correlated_subgraphs_statistics.csv",
+      "group": "candidate_statistics",
+      "bytes": 1595,
+      "sha256": "643860dbe0cd5ad1e3ba22b481ee3eccc401c1ede2380658da424cdfdf7c1b70"
+    },
+    {
+      "path": "dataset/darpa_optc/SysClient0501/experiments/results/Full_Script_Test_TGN_fullz/T3_OCRGCN_SysClient0501_TGN_fullz/run2_expand_1_hop_MaxEdges5000_K15_ly3_correlated_subgraphs_statistics.csv",
+      "group": "candidate_statistics",
+      "bytes": 3295,
+      "sha256": "4d478763e168638f52b4ad8abeb659ec7d62079522e7d1fb860e372280375a22"
+    },
+    {
+      "path": "dataset/darpa_optc/SysClient0501/experiments/results/Full_Script_Test_TGN_fullz/T3_OCRGCN_SysClient0501_TGN_fullz/subgraph_anomaly_results_summary.csv",
+      "group": "run_result",
+      "bytes": 810,
+      "sha256": "826d2711e064b5581ee77f3b46d8b321fa6896ee182b3adf2e104a032d214a3d"
+    },
+    {
+      "path": "dataset/darpa_optc/SysClient0501/experiments/results/Full_Script_Test_TGNonly/T3_OCRGCN_SysClient0501_TGNonly/subgraph_anomaly_results_summary.csv",
+      "group": "temporal_only_summary",
+      "bytes": 1089,
+      "sha256": "9eb8d2d63a3fe6a047057733c74ac86a4d6d667070f8bb2cdb5344cddd90cdb5"
+    },
+    {
+      "path": "dataset/darpa_optc/SysClient0501/experiments/results/Full_Script_Test_fullz/T3_OCRGCN_SysClient0501_fullz/anomaly_results_summary.csv",
+      "group": "run_result",
+      "bytes": 2073,
+      "sha256": "66766ce43a5b71665b4e9dd804502342134f6db035e59d3fe5b93b67d52fe32b"
+    },
+    {
+      "path": "dataset/darpa_optc/SysClient0501/experiments/results/Full_Script_Test_fullz/T3_OCRGCN_SysClient0501_fullz/run0_expand_1_hop_MaxEdges5000_K15_ly3_correlated_subgraphs_statistics.csv",
+      "group": "candidate_statistics",
+      "bytes": 5201,
+      "sha256": "9d9960456cd062a008308af4cbdea65e1678afac27ad922a1e69be808636312f"
+    },
+    {
+      "path": "dataset/darpa_optc/SysClient0501/experiments/results/Full_Script_Test_fullz/T3_OCRGCN_SysClient0501_fullz/run1_expand_1_hop_MaxEdges5000_K15_ly3_correlated_subgraphs_statistics.csv",
+      "group": "candidate_statistics",
+      "bytes": 3515,
+      "sha256": "7ed77f706be073d0282fc175afd922871a365d9ca117cf58208a63f5fedb8b25"
+    },
+    {
+      "path": "dataset/darpa_optc/SysClient0501/experiments/results/Full_Script_Test_fullz/T3_OCRGCN_SysClient0501_fullz/run2_expand_1_hop_MaxEdges5000_K15_ly3_correlated_subgraphs_statistics.csv",
+      "group": "candidate_statistics",
+      "bytes": 3789,
+      "sha256": "fea60c6d04e14502d01758c3953294e179346ebebe8bba32f8395295c05a54bf"
+    },
+    {
+      "path": "dataset/darpa_optc/SysClient0501/experiments/results/Full_Script_Test_fullz/T3_OCRGCN_SysClient0501_fullz/subgraph_anomaly_results_summary.csv",
+      "group": "run_result",
+      "bytes": 837,
+      "sha256": "8a31708fa39cb4fb2cf188635f0749214aa66b283c1bbd3c37bb528255e7d04e"
+    },
+    {
+      "path": "dataset/darpa_tc3/cadets/experiments/results/Full_Script_Test_TGN_fullz/T3_OCRGCN_cadets_TGN_fullz/anomaly_results_summary.csv",
+      "group": "run_result",
+      "bytes": 2110,
+      "sha256": "cf1b385820c776ed979c5cf56686492b1bc2174d7092a3bb79e53466ee616979"
+    },
+    {
+      "path": "dataset/darpa_tc3/cadets/experiments/results/Full_Script_Test_TGN_fullz/T3_OCRGCN_cadets_TGN_fullz/run0_expand_1_hop_MaxEdges5000_K15_ly3_correlated_subgraphs_statistics.csv",
+      "group": "candidate_statistics",
+      "bytes": 2449,
+      "sha256": "d9bd4080b399e6cf00a7ddd69596b5c3b754144fbc62e3be9a5e8633d6805c0b"
+    },
+    {
+      "path": "dataset/darpa_tc3/cadets/experiments/results/Full_Script_Test_TGN_fullz/T3_OCRGCN_cadets_TGN_fullz/run1_expand_1_hop_MaxEdges5000_K15_ly3_correlated_subgraphs_statistics.csv",
+      "group": "candidate_statistics",
+      "bytes": 2326,
+      "sha256": "216a9fd9afa4200273ab67f87ca9d2fc0c14e07b29881891a90ddd150c452a22"
+    },
+    {
+      "path": "dataset/darpa_tc3/cadets/experiments/results/Full_Script_Test_TGN_fullz/T3_OCRGCN_cadets_TGN_fullz/run2_expand_1_hop_MaxEdges5000_K15_ly3_correlated_subgraphs_statistics.csv",
+      "group": "candidate_statistics",
+      "bytes": 2118,
+      "sha256": "aad10d42063184aedb50451b6f83cc3364343050e8e5547df1218e7dad9b1559"
+    },
+    {
+      "path": "dataset/darpa_tc3/cadets/experiments/results/Full_Script_Test_TGN_fullz/T3_OCRGCN_cadets_TGN_fullz/subgraph_anomaly_results_summary.csv",
+      "group": "run_result",
+      "bytes": 868,
+      "sha256": "f0ba9adc14cf9fb39b564f4be3a9f2e3b63e16f1022e681fbafe49a18b92d1b7"
+    },
+    {
+      "path": "dataset/darpa_tc3/cadets/experiments/results/Full_Script_Test_TGNonly/T3_OCRGCN_cadets_TGNonly/subgraph_anomaly_results_summary.csv",
+      "group": "temporal_only_summary",
+      "bytes": 1206,
+      "sha256": "4582e05aa1ca629d29de411d591bd680eb2150ff4f8930652b78df6396b4ea17"
+    },
+    {
+      "path": "dataset/darpa_tc3/cadets/experiments/results/Full_Script_Test_fullz/T3_OCRGCN_cadets_fullz/anomaly_results_summary.csv",
+      "group": "run_result",
+      "bytes": 2103,
+      "sha256": "e46597107f3a37b2a66f0b966ace7903affe7aa8f2343ea102f6e90e4565966a"
+    },
+    {
+      "path": "dataset/darpa_tc3/cadets/experiments/results/Full_Script_Test_fullz/T3_OCRGCN_cadets_fullz/run0_expand_1_hop_MaxEdges5000_K15_ly3_correlated_subgraphs_statistics.csv",
+      "group": "candidate_statistics",
+      "bytes": 2765,
+      "sha256": "13471543a5c5161a12e2d2a16973e8506ccc0b4bea82eeae5acbbe8b8b56de7e"
+    },
+    {
+      "path": "dataset/darpa_tc3/cadets/experiments/results/Full_Script_Test_fullz/T3_OCRGCN_cadets_fullz/run1_expand_1_hop_MaxEdges5000_K15_ly3_correlated_subgraphs_statistics.csv",
+      "group": "candidate_statistics",
+      "bytes": 2391,
+      "sha256": "87dff36c2c5084637affecf679ca1b0712271fb8115eb298125ba2d9f0afd492"
+    },
+    {
+      "path": "dataset/darpa_tc3/cadets/experiments/results/Full_Script_Test_fullz/T3_OCRGCN_cadets_fullz/run2_expand_1_hop_MaxEdges5000_K15_ly3_correlated_subgraphs_statistics.csv",
+      "group": "candidate_statistics",
+      "bytes": 2088,
+      "sha256": "5153c3ebd7e547ffdde4919049adb8f232aaefe9725e516e5124026ec0df1a68"
+    },
+    {
+      "path": "dataset/darpa_tc3/cadets/experiments/results/Full_Script_Test_fullz/T3_OCRGCN_cadets_fullz/subgraph_anomaly_results_summary.csv",
+      "group": "run_result",
+      "bytes": 1138,
+      "sha256": "2d1946d5019972ba6c704aa46ad3fa0d427d5f6be17ddfec25ac745f7db0e2f7"
+    },
+    {
+      "path": "dataset/darpa_tc3/theia/experiments/results/Full_Script_Test_TGN_fullz/T3_OCRGCN_theia_TGN_fullz/anomaly_results_summary.csv",
+      "group": "run_result",
+      "bytes": 2275,
+      "sha256": "5244c6702d9dac3a878d6b5a70657f375de0922b45be6f47ad41523939604414"
+    },
+    {
+      "path": "dataset/darpa_tc3/theia/experiments/results/Full_Script_Test_TGN_fullz/T3_OCRGCN_theia_TGN_fullz/run0_expand_1_hop_MaxEdges5000_K15_ly3_correlated_subgraphs_statistics.csv",
+      "group": "candidate_statistics",
+      "bytes": 1332,
+      "sha256": "c219e43b029dc5d0061d4d093ee87e6171bc3c8bbd7532adf00ca0fe800996e9"
+    },
+    {
+      "path": "dataset/darpa_tc3/theia/experiments/results/Full_Script_Test_TGN_fullz/T3_OCRGCN_theia_TGN_fullz/run1_expand_1_hop_MaxEdges5000_K15_ly3_correlated_subgraphs_statistics.csv",
+      "group": "candidate_statistics",
+      "bytes": 1316,
+      "sha256": "8ed76c090012a7532f004504c74a975b69183e3e7f4fb3af355ff2ab2e0dcad8"
+    },
+    {
+      "path": "dataset/darpa_tc3/theia/experiments/results/Full_Script_Test_TGN_fullz/T3_OCRGCN_theia_TGN_fullz/run2_expand_1_hop_MaxEdges5000_K15_ly3_correlated_subgraphs_statistics.csv",
+      "group": "candidate_statistics",
+      "bytes": 1293,
+      "sha256": "ef214181645c29828b80da87a984a88696ccd92aecf76f8a07d798650b7abd51"
+    },
+    {
+      "path": "dataset/darpa_tc3/theia/experiments/results/Full_Script_Test_TGN_fullz/T3_OCRGCN_theia_TGN_fullz/subgraph_anomaly_results_summary.csv",
+      "group": "run_result",
+      "bytes": 1154,
+      "sha256": "32e1c404d7573a29865309eae4ddbda7c879cdb2af96163ecd636619b33d46e7"
+    },
+    {
+      "path": "dataset/darpa_tc3/theia/experiments/results/Full_Script_Test_TGNonly/T3_OCRGCN_theia_TGNonly/subgraph_anomaly_results_summary.csv",
+      "group": "temporal_only_summary",
+      "bytes": 1058,
+      "sha256": "ac241f3b16ca94527732e29eb436d8164c300d65ec9b33493fbf1541aadb8210"
+    },
+    {
+      "path": "dataset/darpa_tc3/theia/experiments/results/Full_Script_Test_fullz/T3_OCRGCN_theia_fullz/anomaly_results_summary.csv",
+      "group": "run_result",
+      "bytes": 2274,
+      "sha256": "8ff14e90371c35028845b8bf1ecf2b4ad81e64e225973bedd2d6eb1da43fa941"
+    },
+    {
+      "path": "dataset/darpa_tc3/theia/experiments/results/Full_Script_Test_fullz/T3_OCRGCN_theia_fullz/run0_expand_1_hop_MaxEdges5000_K15_ly3_correlated_subgraphs_statistics.csv",
+      "group": "candidate_statistics",
+      "bytes": 1433,
+      "sha256": "d5ba062d5d754a416f1859ab553ac58f24386c6093fd0f2c607a5d1625e684ba"
+    },
+    {
+      "path": "dataset/darpa_tc3/theia/experiments/results/Full_Script_Test_fullz/T3_OCRGCN_theia_fullz/run1_expand_1_hop_MaxEdges5000_K15_ly3_correlated_subgraphs_statistics.csv",
+      "group": "candidate_statistics",
+      "bytes": 1235,
+      "sha256": "6d62b8c357b166fddd361f9d222c94c88ec81356d24695cb950b008f706a8a10"
+    },
+    {
+      "path": "dataset/darpa_tc3/theia/experiments/results/Full_Script_Test_fullz/T3_OCRGCN_theia_fullz/run2_expand_1_hop_MaxEdges5000_K15_ly3_correlated_subgraphs_statistics.csv",
+      "group": "candidate_statistics",
+      "bytes": 1298,
+      "sha256": "ba9915874291d80ad6e848b12d2909f66ac20da7b25737493e66b3832b84f524"
+    },
+    {
+      "path": "dataset/darpa_tc3/theia/experiments/results/Full_Script_Test_fullz/T3_OCRGCN_theia_fullz/subgraph_anomaly_results_summary.csv",
+      "group": "run_result",
+      "bytes": 1082,
+      "sha256": "2f5c1284fe6c20147284f3490310fac9e06bea771a01cf4abe8b74125f49738e"
+    },
+    {
+      "path": "dataset/darpa_tc3/trace/experiments/results/Full_Script_Test_TGN_fullz/T3_OCRGCN_trace_TGN_fullz/anomaly_results_summary.csv",
+      "group": "run_result",
+      "bytes": 2489,
+      "sha256": "9e41516c09833cb1f250f3ef8274ea99b6b38fe298b2be5845136f46111531f5"
+    },
+    {
+      "path": "dataset/darpa_tc3/trace/experiments/results/Full_Script_Test_TGN_fullz/T3_OCRGCN_trace_TGN_fullz/run0_expand_1_hop_MaxEdges5000_K15_ly3_correlated_subgraphs_statistics.csv",
+      "group": "candidate_statistics",
+      "bytes": 1795,
+      "sha256": "78831fd3f1851108f76d4b2055128de682c525216e7609e5da01f1abb09da525"
+    },
+    {
+      "path": "dataset/darpa_tc3/trace/experiments/results/Full_Script_Test_TGN_fullz/T3_OCRGCN_trace_TGN_fullz/run1_expand_1_hop_MaxEdges5000_K15_ly3_correlated_subgraphs_statistics.csv",
+      "group": "candidate_statistics",
+      "bytes": 1692,
+      "sha256": "1f1d934d8804496a177898b6dea877b65561fcf456d0d122b09fdb3e4cd035f2"
+    },
+    {
+      "path": "dataset/darpa_tc3/trace/experiments/results/Full_Script_Test_TGN_fullz/T3_OCRGCN_trace_TGN_fullz/run2_expand_1_hop_MaxEdges5000_K15_ly3_correlated_subgraphs_statistics.csv",
+      "group": "candidate_statistics",
+      "bytes": 3841,
+      "sha256": "efeecba984b1c2e34828eef4bd22dda0ccd76db0ce69c68d4040b83c20c89b34"
+    },
+    {
+      "path": "dataset/darpa_tc3/trace/experiments/results/Full_Script_Test_TGN_fullz/T3_OCRGCN_trace_TGN_fullz/subgraph_anomaly_results_summary.csv",
+      "group": "run_result",
+      "bytes": 841,
+      "sha256": "b3a934ca01b32b741af9e1d0cd50a766347206554c244dc393e5b5aa7749f3cc"
+    },
+    {
+      "path": "dataset/darpa_tc3/trace/experiments/results/Full_Script_Test_TGNonly/T3_OCRGCN_trace_TGNonly/subgraph_anomaly_results_summary.csv",
+      "group": "temporal_only_summary",
+      "bytes": 1117,
+      "sha256": "d2f29f9a2a7fc94ca4946ff24708c83749f5d29e88d768d977bddc57e5a01d77"
+    },
+    {
+      "path": "dataset/darpa_tc3/trace/experiments/results/Full_Script_Test_fullz/T3_OCRGCN_trace_fullz/anomaly_results_summary.csv",
+      "group": "run_result",
+      "bytes": 2474,
+      "sha256": "ebf0eda8d5bbd08524c2dc32309e7ae4143a382b75195730353d77c2f0a8ccfe"
+    },
+    {
+      "path": "dataset/darpa_tc3/trace/experiments/results/Full_Script_Test_fullz/T3_OCRGCN_trace_fullz/run0_expand_1_hop_MaxEdges5000_K15_ly3_correlated_subgraphs_statistics.csv",
+      "group": "candidate_statistics",
+      "bytes": 2202,
+      "sha256": "693135e708d883c42f432482c6f37147683ea17b85ed1b8e76723232b88e248d"
+    },
+    {
+      "path": "dataset/darpa_tc3/trace/experiments/results/Full_Script_Test_fullz/T3_OCRGCN_trace_fullz/run1_expand_1_hop_MaxEdges5000_K15_ly3_correlated_subgraphs_statistics.csv",
+      "group": "candidate_statistics",
+      "bytes": 2442,
+      "sha256": "9aa34b5501a51edf1679e7ed000aac78cdc00d64ff71c46a73515d869220261d"
+    },
+    {
+      "path": "dataset/darpa_tc3/trace/experiments/results/Full_Script_Test_fullz/T3_OCRGCN_trace_fullz/run2_expand_1_hop_MaxEdges5000_K15_ly3_correlated_subgraphs_statistics.csv",
+      "group": "candidate_statistics",
+      "bytes": 2306,
+      "sha256": "bf52cfd42ae9e55969d956397de77b01af6e8f992c6dfcd64e57549e7a7c0fe4"
+    },
+    {
+      "path": "dataset/darpa_tc3/trace/experiments/results/Full_Script_Test_fullz/T3_OCRGCN_trace_fullz/subgraph_anomaly_results_summary.csv",
+      "group": "run_result",
+      "bytes": 896,
+      "sha256": "4e3dbf5972741a805ada4894a04bd115cf993d928b64f941593c9e911fffa58d"
+    },
+    {
+      "path": "dataset/nodlink/SimulatedUbuntu/experiments/results/Full_Script_Test_TGN_fullz/T3_OCRGCN_SimulatedUbuntu_TGN_fullz/anomaly_results_summary.csv",
+      "group": "run_result",
+      "bytes": 2137,
+      "sha256": "e4651824bef20f3400056e03a611ecaf58e4750e6c3645470d3ad7881da0da7c"
+    },
+    {
+      "path": "dataset/nodlink/SimulatedUbuntu/experiments/results/Full_Script_Test_TGN_fullz/T3_OCRGCN_SimulatedUbuntu_TGN_fullz/run0_expand_1_hop_MaxEdges5000_K15_ly3_correlated_subgraphs_statistics.csv",
+      "group": "candidate_statistics",
+      "bytes": 1753,
+      "sha256": "171dc68658f6c338602fadfc8ffc0f0755bc3b295d5742245d35fa5e5250bb53"
+    },
+    {
+      "path": "dataset/nodlink/SimulatedUbuntu/experiments/results/Full_Script_Test_TGN_fullz/T3_OCRGCN_SimulatedUbuntu_TGN_fullz/run1_expand_1_hop_MaxEdges5000_K15_ly3_correlated_subgraphs_statistics.csv",
+      "group": "candidate_statistics",
+      "bytes": 1342,
+      "sha256": "a7cbfe03a740445e634e79667a01e561d9cc90edf79fec22cb69649813092383"
+    },
+    {
+      "path": "dataset/nodlink/SimulatedUbuntu/experiments/results/Full_Script_Test_TGN_fullz/T3_OCRGCN_SimulatedUbuntu_TGN_fullz/run2_expand_1_hop_MaxEdges5000_K15_ly3_correlated_subgraphs_statistics.csv",
+      "group": "candidate_statistics",
+      "bytes": 1357,
+      "sha256": "f4b8cdf6e174abf51e1fdbe33f07d85440a05ca5c5c6b7540498ac3f8323b91c"
+    },
+    {
+      "path": "dataset/nodlink/SimulatedUbuntu/experiments/results/Full_Script_Test_TGN_fullz/T3_OCRGCN_SimulatedUbuntu_TGN_fullz/subgraph_anomaly_results_summary.csv",
+      "group": "run_result",
+      "bytes": 819,
+      "sha256": "bdc14ec39c3821cf95d77419b17129978e6d1c41cc472d7c88787841a5140fe5"
+    },
+    {
+      "path": "dataset/nodlink/SimulatedUbuntu/experiments/results/Full_Script_Test_TGNonly/T3_OCRGCN_SimulatedUbuntu_TGNonly/subgraph_anomaly_results_summary.csv",
+      "group": "temporal_only_summary",
+      "bytes": 1160,
+      "sha256": "0eed590980b4c5414d29a1f761a9ae44a3c748f788c141278c0e714bef16b89b"
+    },
+    {
+      "path": "dataset/nodlink/SimulatedUbuntu/experiments/results/Full_Script_Test_fullz/T3_OCRGCN_SimulatedUbuntu_fullz/anomaly_results_summary.csv",
+      "group": "run_result",
+      "bytes": 2078,
+      "sha256": "bd2ae9fa7e81d82b0ee0b48f0feaf5aa33a6c9855209878b2e4c40cda7fbe8fe"
+    },
+    {
+      "path": "dataset/nodlink/SimulatedUbuntu/experiments/results/Full_Script_Test_fullz/T3_OCRGCN_SimulatedUbuntu_fullz/run0_expand_1_hop_MaxEdges5000_K15_ly3_correlated_subgraphs_statistics.csv",
+      "group": "candidate_statistics",
+      "bytes": 1552,
+      "sha256": "0f7c2ae25e17f5c8ea77d6a4528f64e222289511808c5e768e9abe22ef23cd97"
+    },
+    {
+      "path": "dataset/nodlink/SimulatedUbuntu/experiments/results/Full_Script_Test_fullz/T3_OCRGCN_SimulatedUbuntu_fullz/run1_expand_1_hop_MaxEdges5000_K15_ly3_correlated_subgraphs_statistics.csv",
+      "group": "candidate_statistics",
+      "bytes": 1559,
+      "sha256": "2ae3521a054dd086d092995183b117778109d48890a31b40e7a6c6a162cdc629"
+    },
+    {
+      "path": "dataset/nodlink/SimulatedUbuntu/experiments/results/Full_Script_Test_fullz/T3_OCRGCN_SimulatedUbuntu_fullz/run2_expand_1_hop_MaxEdges5000_K15_ly3_correlated_subgraphs_statistics.csv",
+      "group": "candidate_statistics",
+      "bytes": 1555,
+      "sha256": "ac171438d1f053c7b04627c82955b00db137c19bed797c6071fbc9c72719dc3c"
+    },
+    {
+      "path": "dataset/nodlink/SimulatedUbuntu/experiments/results/Full_Script_Test_fullz/T3_OCRGCN_SimulatedUbuntu_fullz/subgraph_anomaly_results_summary.csv",
+      "group": "run_result",
+      "bytes": 880,
+      "sha256": "da858389b9c9f788c42c66fee03179bb86c3cdf9388437554d0bc1d4e2f17e23"
+    },
+    {
+      "path": "dataset/nodlink/SimulatedW10/experiments/results/Full_Script_Test_TGN_fullz/T3_OCRGCN_SimulatedW10_TGN_fullz/anomaly_results_summary.csv",
+      "group": "run_result",
+      "bytes": 2438,
+      "sha256": "3ae4344a9185a4effb5340eed13826cd93a207253533879625610f153fdf689f"
+    },
+    {
+      "path": "dataset/nodlink/SimulatedW10/experiments/results/Full_Script_Test_TGN_fullz/T3_OCRGCN_SimulatedW10_TGN_fullz/run0_expand_1_hop_MaxEdges5000_K15_ly3_correlated_subgraphs_statistics.csv",
+      "group": "candidate_statistics",
+      "bytes": 1475,
+      "sha256": "05359045379c494b12db629717b4fe27889f6cfe2109dfa5e5e28117cd212711"
+    },
+    {
+      "path": "dataset/nodlink/SimulatedW10/experiments/results/Full_Script_Test_TGN_fullz/T3_OCRGCN_SimulatedW10_TGN_fullz/run1_expand_1_hop_MaxEdges5000_K15_ly3_correlated_subgraphs_statistics.csv",
+      "group": "candidate_statistics",
+      "bytes": 993,
+      "sha256": "c2af50f49db39a0f0b2d1730862a1f3f4b6f68b2a8cd52a08b294b3a5785f6c7"
+    },
+    {
+      "path": "dataset/nodlink/SimulatedW10/experiments/results/Full_Script_Test_TGN_fullz/T3_OCRGCN_SimulatedW10_TGN_fullz/run2_expand_1_hop_MaxEdges5000_K15_ly3_correlated_subgraphs_statistics.csv",
+      "group": "candidate_statistics",
+      "bytes": 1461,
+      "sha256": "46d4eb3c4a77091fe2bc25cb6139b93bf5d96709c1cdc588c70598ddb7ac1c4f"
+    },
+    {
+      "path": "dataset/nodlink/SimulatedW10/experiments/results/Full_Script_Test_TGN_fullz/T3_OCRGCN_SimulatedW10_TGN_fullz/subgraph_anomaly_results_summary.csv",
+      "group": "run_result",
+      "bytes": 826,
+      "sha256": "c8d1279e48640fb3c938c3891a4e0fdb6ead6276d4aaa4918f9c8d4e04de9495"
+    },
+    {
+      "path": "dataset/nodlink/SimulatedW10/experiments/results/Full_Script_Test_TGNonly/T3_OCRGCN_SimulatedW10_TGNonly/subgraph_anomaly_results_summary.csv",
+      "group": "temporal_only_summary",
+      "bytes": 1095,
+      "sha256": "e5a10bbb169a8aa9660acfb72583e64d7328dae505210414d98d30e713fd97d1"
+    },
+    {
+      "path": "dataset/nodlink/SimulatedW10/experiments/results/Full_Script_Test_fullz/T3_OCRGCN_SimulatedW10_fullz/anomaly_results_summary.csv",
+      "group": "run_result",
+      "bytes": 2059,
+      "sha256": "4c91d9af99954023798d1a5bc416d85c6e3f1a10890c8861a12b5a2f117e6965"
+    },
+    {
+      "path": "dataset/nodlink/SimulatedW10/experiments/results/Full_Script_Test_fullz/T3_OCRGCN_SimulatedW10_fullz/run0_expand_1_hop_MaxEdges5000_K15_ly3_correlated_subgraphs_statistics.csv",
+      "group": "candidate_statistics",
+      "bytes": 1174,
+      "sha256": "faad444101e016f5f6b6fd80a906a7a63d659b442cccbd8f124829c8a421518c"
+    },
+    {
+      "path": "dataset/nodlink/SimulatedW10/experiments/results/Full_Script_Test_fullz/T3_OCRGCN_SimulatedW10_fullz/run1_expand_1_hop_MaxEdges5000_K15_ly3_correlated_subgraphs_statistics.csv",
+      "group": "candidate_statistics",
+      "bytes": 1173,
+      "sha256": "d3f8ec5cc53295c53909ad2700002b1cc41ca06c780acdbfa41fd87e27b288f0"
+    },
+    {
+      "path": "dataset/nodlink/SimulatedW10/experiments/results/Full_Script_Test_fullz/T3_OCRGCN_SimulatedW10_fullz/run2_expand_1_hop_MaxEdges5000_K15_ly3_correlated_subgraphs_statistics.csv",
+      "group": "candidate_statistics",
+      "bytes": 1266,
+      "sha256": "6140306873b7b71505a1844a14fccbb91d5bcb04b27cb17863341475398dde60"
+    },
+    {
+      "path": "dataset/nodlink/SimulatedW10/experiments/results/Full_Script_Test_fullz/T3_OCRGCN_SimulatedW10_fullz/subgraph_anomaly_results_summary.csv",
+      "group": "run_result",
+      "bytes": 826,
+      "sha256": "a6c90824ece69d031eeb8f6a7c69d4355874e7cdb4998af117fb725e1926a7d8"
+    },
+    {
+      "path": "dataset/nodlink/SimulatedWS12/experiments/results/Full_Script_Test_TGN_fullz/T3_OCRGCN_SimulatedWS12_TGN_fullz/anomaly_results_summary.csv",
+      "group": "run_result",
+      "bytes": 2139,
+      "sha256": "ef8b9aef4312638b3d31f7842b604044fa3f9f3d6db8b33d8a253c7fd927b2a5"
+    },
+    {
+      "path": "dataset/nodlink/SimulatedWS12/experiments/results/Full_Script_Test_TGN_fullz/T3_OCRGCN_SimulatedWS12_TGN_fullz/run0_expand_1_hop_MaxEdges5000_K15_ly3_correlated_subgraphs_statistics.csv",
+      "group": "candidate_statistics",
+      "bytes": 1412,
+      "sha256": "5a0281f0e5ce445a34dc9e548a258faa6f655d34c3f2c9f4eca1a2300a877dd7"
+    },
+    {
+      "path": "dataset/nodlink/SimulatedWS12/experiments/results/Full_Script_Test_TGN_fullz/T3_OCRGCN_SimulatedWS12_TGN_fullz/run1_expand_1_hop_MaxEdges5000_K15_ly3_correlated_subgraphs_statistics.csv",
+      "group": "candidate_statistics",
+      "bytes": 986,
+      "sha256": "1bdb894d3313f2e7b7b559a22096ec1528aeffdb835511475c5787aca321bcc9"
+    },
+    {
+      "path": "dataset/nodlink/SimulatedWS12/experiments/results/Full_Script_Test_TGN_fullz/T3_OCRGCN_SimulatedWS12_TGN_fullz/run2_expand_1_hop_MaxEdges5000_K15_ly3_correlated_subgraphs_statistics.csv",
+      "group": "candidate_statistics",
+      "bytes": 1475,
+      "sha256": "43efb4ae6006e497a832baf58c55a627ff82961b37c66aa31aa6b8e9671ab381"
+    },
+    {
+      "path": "dataset/nodlink/SimulatedWS12/experiments/results/Full_Script_Test_TGN_fullz/T3_OCRGCN_SimulatedWS12_TGN_fullz/subgraph_anomaly_results_summary.csv",
+      "group": "run_result",
+      "bytes": 1025,
+      "sha256": "cc2a0806a47daa4f476a7d9ccf47463a38009e8e26f30646ed2d3d4e028ac2e9"
+    },
+    {
+      "path": "dataset/nodlink/SimulatedWS12/experiments/results/Full_Script_Test_TGNonly/T3_OCRGCN_SimulatedWS12_TGNonly/subgraph_anomaly_results_summary.csv",
+      "group": "temporal_only_summary",
+      "bytes": 993,
+      "sha256": "e6f123a16112e78c5ac7ddad9e08a4008d3946a284d7a88739db109ed442869a"
+    },
+    {
+      "path": "dataset/nodlink/SimulatedWS12/experiments/results/Full_Script_Test_fullz/T3_OCRGCN_SimulatedWS12_fullz/anomaly_results_summary.csv",
+      "group": "run_result",
+      "bytes": 2043,
+      "sha256": "aa4050df5ddc27502ffa4982cf8612d0dfb5b0b9785dc60ac45ea55b6765037d"
+    },
+    {
+      "path": "dataset/nodlink/SimulatedWS12/experiments/results/Full_Script_Test_fullz/T3_OCRGCN_SimulatedWS12_fullz/run0_expand_1_hop_MaxEdges5000_K15_ly3_correlated_subgraphs_statistics.csv",
+      "group": "candidate_statistics",
+      "bytes": 968,
+      "sha256": "2b0b2243dcae86a5b4312c75f6b8ce389206744adbc6d6108913f9ee74a535d3"
+    },
+    {
+      "path": "dataset/nodlink/SimulatedWS12/experiments/results/Full_Script_Test_fullz/T3_OCRGCN_SimulatedWS12_fullz/run1_expand_1_hop_MaxEdges5000_K15_ly3_correlated_subgraphs_statistics.csv",
+      "group": "candidate_statistics",
+      "bytes": 1603,
+      "sha256": "d5f6373ddaaacbda08c2ef1d810f6f5b0c6e0527fb9404a97b4760a62eaccde1"
+    },
+    {
+      "path": "dataset/nodlink/SimulatedWS12/experiments/results/Full_Script_Test_fullz/T3_OCRGCN_SimulatedWS12_fullz/run2_expand_1_hop_MaxEdges5000_K15_ly3_correlated_subgraphs_statistics.csv",
+      "group": "candidate_statistics",
+      "bytes": 988,
+      "sha256": "fbe49f82e7024e5261ef872eb240f941367667959d12c2200d1df61ee830bd39"
+    },
+    {
+      "path": "dataset/nodlink/SimulatedWS12/experiments/results/Full_Script_Test_fullz/T3_OCRGCN_SimulatedWS12_fullz/subgraph_anomaly_results_summary.csv",
+      "group": "run_result",
+      "bytes": 1059,
+      "sha256": "ba5f46abc7625590171ce34a26f8505e3c2e07dcf21af1f7c0399af5d91237bb"
+    },
+    {
+      "path": "docs/DATA_PROVENANCE_AND_LICENSES.md",
+      "group": "documentation",
+      "bytes": 3809,
+      "sha256": "3e4d3d27fdc8727c1c3b896b14b21b13e96135c0265c451a7bf5936ce6765d42"
+    },
+    {
+      "path": "docs/REPRODUCTION.md",
+      "group": "documentation",
+      "bytes": 3798,
+      "sha256": "eca0d5faeeaa20ab48feca9f33701f7adbf2fd81cbf7e5e4a8bedb019a4b79f0"
+    },
+    {
+      "path": "docs/VERIFICATION.md",
+      "group": "documentation",
+      "bytes": 4342,
+      "sha256": "f1159b34eb1d08cb9804d31b9662dca455145889439cd117833bc550b2df737f"
+    },
+    {
+      "path": "paper/README.md",
+      "group": "citation",
+      "bytes": 847,
+      "sha256": "92b64edf682e3b7377f21e6b3fdca7ec02ff78a431b60e8c0ecc2dd113f04c51"
+    },
+    {
+      "path": "paper/artifact_citation.tex",
+      "group": "citation",
+      "bytes": 2768,
+      "sha256": "d4ff9362e83012259cb7e4fc904b5f87125a0850da85b1ff2bc2b32819836e82"
+    },
+    {
+      "path": "requirements.txt",
+      "group": "documentation",
+      "bytes": 219,
+      "sha256": "4a8d6a7a0008d911252c0b7df7c3d3a2a46c8eb18292ccbd4d711a9cf7241059"
+    },
+    {
+      "path": "src/database_config.py",
+      "group": "source",
+      "bytes": 6728,
+      "sha256": "8fa01e469a6d68f8273d8c6537ab9b4d9003368c81f190e1265ae9b45c8e1e3b"
+    },
+    {
+      "path": "src/dataset_pyg_custom.py",
+      "group": "source",
+      "bytes": 9987,
+      "sha256": "14da9f84188e54afc9a4011a015f0e564f479aa349f09d87300e1d28546e5d71"
+    },
+    {
+      "path": "src/detect_anomalous_subgraphs.py",
+      "group": "source",
+      "bytes": 79243,
+      "sha256": "69a0eba7d1f3251bbccfd13bfa7b7a4c0f50084bd9128542e4608e246ea6f566"
+    },
+    {
+      "path": "src/encode_to_PyG.py",
+      "group": "source",
+      "bytes": 27558,
+      "sha256": "c54b4fd91ff810afd16b2ba1800b4f733cfbf74a231ad75274ece168a9e667a9"
+    },
+    {
+      "path": "src/evaluate_hsh.py",
+      "group": "source",
+      "bytes": 8283,
+      "sha256": "d478508a6bb5bbfe6affa01d57ef470619d848e633455e6b2f9b8ff13c01b46e"
+    },
+    {
+      "path": "src/logger.py",
+      "group": "source",
+      "bytes": 1907,
+      "sha256": "114f2615a6b6fe71e9d163ef84734c973b0a16d88dfb23302d79744fd4a0a9d5"
+    },
+    {
+      "path": "src/pygod/__init__.py",
+      "group": "source_dependency",
+      "bytes": 163,
+      "sha256": "c465030acb1f6a5956e0b1513aea0dc1858d0fed45547c505511d7c08c02d232"
+    },
+    {
+      "path": "src/pygod/detector/__init__.py",
+      "group": "source_dependency",
+      "bytes": 117,
+      "sha256": "6326d0c7f751b2717b933b05722cd06f7187c1ce0557a187793fa8256bb9cb3d"
+    },
+    {
+      "path": "src/pygod/detector/ocrapt_base.py",
+      "group": "source_dependency",
+      "bytes": 26367,
+      "sha256": "729f6a66c615d2d6990eb986d0f7c537070c703f73b3c7ea13ea7471e30ec218"
+    },
+    {
+      "path": "src/pygod/detector/ocrgcn.py",
+      "group": "source_dependency",
+      "bytes": 7748,
+      "sha256": "5caa71f6dcb5e98d662d41c2d09682629e8d5ce6bc2d4931e95b685a1170ea3b"
+    },
+    {
+      "path": "src/pygod/metric/__init__.py",
+      "group": "source_dependency",
+      "bytes": 300,
+      "sha256": "7b8dc3ff90561a9882d993331e2ae7021c36e6145b948049815ce8373030bf90"
+    },
+    {
+      "path": "src/pygod/metric/metric.py",
+      "group": "source_dependency",
+      "bytes": 3000,
+      "sha256": "75d7a38f2ef8a8eb4c9b023629dbf088a2da86ff3a4661f374e411ae8308d8f9"
+    },
+    {
+      "path": "src/pygod/nn/__init__.py",
+      "group": "source_dependency",
+      "bytes": 57,
+      "sha256": "e61ff7d5ec53b8ae08459f7bb3d6c00a7d75dbb2b62634d04caf398b7b3208b7"
+    },
+    {
+      "path": "src/pygod/nn/ocrgcn.py",
+      "group": "source_dependency",
+      "bytes": 12544,
+      "sha256": "bdd5d7447220f67d6521997709cdd694f06091b02b24f3e0e44b9211fd6569f6"
+    },
+    {
+      "path": "src/pygod/nn/rgcn_conv.py",
+      "group": "source_dependency",
+      "bytes": 16077,
+      "sha256": "06d42d4c4c0eb44e911becb7cd75f1139055b59a2f06fef6ad3ddcc2f4eba838"
+    },
+    {
+      "path": "src/pygod/utils/__init__.py",
+      "group": "source_dependency",
+      "bytes": 23,
+      "sha256": "b7ccbfe604f7e641fe705ca017f277eeb4d6cd7f21fad2cb4171b82029543b07"
+    },
+    {
+      "path": "src/pygod/utils/utility.py",
+      "group": "source_dependency",
+      "bytes": 11054,
+      "sha256": "3463edb1b6b8f6afab1b0657d7175c46a7dcdf95baa1848c3b13bd8f6731d36d"
+    },
+    {
+      "path": "src/pygod/version.py",
+      "group": "source_dependency",
+      "bytes": 556,
+      "sha256": "0711cb42681f98f866a7cf4b0303539bee485a2f855273529bb8c8b0a60e31bb"
+    },
+    {
+      "path": "src/sparql_queries.py",
+      "group": "source",
+      "bytes": 33782,
+      "sha256": "354c4ff962d6ad80acb9a87b3809fcdaac0ab749d67d4539277e669ac43e7a04"
+    },
+    {
+      "path": "src/tgn_feature_encoder.py",
+      "group": "source",
+      "bytes": 13764,
+      "sha256": "72eaed541244d1f3db22b1d66389f3cf8f6ea30738c650cb513f1a7993c98a91"
+    },
+    {
+      "path": "src/train_gnn_models.py",
+      "group": "source",
+      "bytes": 40175,
+      "sha256": "9e3022c0b4ed4d6bfd3ec2efeab308a147f4918a3383a32f3aaf2db85e22c350"
+    },
+    {
+      "path": "verify_paper_results.py",
+      "group": "documentation",
+      "bytes": 3578,
+      "sha256": "81f2f0bb798f9770632aae1a8e6630063e98994d506046b5f40e3ae8f5ddbc94"
+    }
+  ]
+}

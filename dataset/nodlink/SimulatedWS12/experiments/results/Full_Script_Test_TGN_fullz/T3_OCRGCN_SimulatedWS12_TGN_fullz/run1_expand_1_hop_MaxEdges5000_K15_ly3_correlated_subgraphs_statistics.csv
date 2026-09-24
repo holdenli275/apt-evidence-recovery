@@ -1,0 +1,8 @@
+ID,number_of_nodes,number_of_edges,predicted_anomalies_benign,predicted_anomalies_malicious,predicted_normal_benign,predicted_normal_malicious,number_of_malicious_nodes,first_action_datetime,last_action_datetime,number_of_actions_in_attack_time,percentage_of_actions_in_attack_time,subgraph_anomaly_score,severity_level
+2,204,587,203,0,1,0,0,2022-03-16 13:28:06-04:00,2022-03-16 13:48:39-04:00,0,0.0,85.41492351,Moderate
+6,60,86,54,4,2,0,4,2022-03-16 13:28:10-04:00,2022-03-17 08:09:59-04:00,0,0.0,30.09072073,Moderate
+0,18,238,12,5,1,0,5,2022-03-16 13:28:10-04:00,2022-03-16 13:40:23-04:00,0,0.0,7.936597130000001,Minor
+1,8,31,7,0,1,0,0,2022-03-16 13:30:05-04:00,2022-03-16 13:30:35-04:00,0,0.0,6.43654624,Minor
+4,4,3,4,0,0,0,0,2022-03-16 13:42:17-04:00,2022-03-17 03:26:23-04:00,0,0.0,3.4851543,Minor
+5,4,4,4,0,0,0,0,2022-03-16 13:37:08-04:00,2022-03-16 13:42:07-04:00,0,0.0,3.28044105,Minor
+3,4,19,3,0,1,0,0,2022-03-16 13:36:41-04:00,2022-03-16 13:36:47-04:00,0,0.0,2.49904668,Minor

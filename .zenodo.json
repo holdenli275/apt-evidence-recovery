@@ -1,0 +1,23 @@
+{
+  "title": "Complementary Behavior Representations for APT Evidence Recovery - code and archived results",
+  "upload_type": "software",
+  "description": "<p>Compact code-and-results release for the paper <em>Complementary Behavior Representations for APT Evidence Recovery</em>.</p><p>The paper asks whether a node representation that looks better at the node level also produces better reported evidence. A joint representation concatenates a relational interaction profile with a compact recurrent event-history state, and the three views are compared through the whole recovery pipeline: one-class R-GCN detection, one-hop correlation, and reporting. Across nine hosts from DARPA TC3, OpTC and the NODLINK simulated collection, and 27 paired detector runs, mean two-hop-tolerant reported-set F1 rises from 0.752 (Aggregate) to 0.901 (Joint) while mean node-level F1 falls from 0.680 to 0.627.</p><p>This deposit contains the archived per-run node summaries, candidate statistics and reported-node summaries, the eleven shared reporting rules with the same-host calibration tables, the paired and leave-one-out statistics, the exploratory type-aware retention diagnostic, the detector/correlation/reporting and TGN-encoder code paths used for the reported runs, and a stdlib-only verification script that re-derives every quoted number from the shipped CSVs.</p><p>Raw audit logs, GraphDB repositories, processed PyG graphs, node feature tensors, TGN embeddings, candidate replay caches and model weights are not included; the release documents the verification and audit paths rather than end-to-end retraining.</p>",
+  "creators": [
+    {
+      "name": "Anonymous Authors (double-blind review copy)"
+    }
+  ],
+  "license": "Apache-2.0",
+  "access_right": "open",
+  "version": "1.0.0",
+  "language": "eng",
+  "keywords": [
+    "provenance graph",
+    "APT evidence recovery",
+    "temporal graph network",
+    "representation learning",
+    "intrusion detection",
+    "reported-set evaluation"
+  ],
+  "notes": "The OCR-APT baseline this code extends is Apache-2.0 and its license is retained. DARPA TC3, OpTC and the NODLINK collection keep their own terms; no raw logs are redistributed."
+}
